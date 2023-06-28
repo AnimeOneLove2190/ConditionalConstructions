@@ -9,21 +9,16 @@ namespace Quest02
             double numberOne = double.Parse(Console.ReadLine());
             double numberTwo = double.Parse(Console.ReadLine());
             double numberThree = double.Parse(Console.ReadLine());
-            if (numberOne > numberTwo)
+            double interNumOne = numberOne;
+            if (numberTwo > interNumOne)
             {
-                if (numberOne > numberThree)
-                {
-                    Console.WriteLine(numberOne);
-                }
+                interNumOne = numberTwo;
             }
-            else if (numberTwo > numberThree)
+            else if (numberThree > interNumOne)
             {
-                Console.WriteLine(numberTwo);
+                interNumOne = numberThree;
             }
-            else
-            {
-                Console.WriteLine(numberThree);
-            }
+            Console.WriteLine(interNumOne);
         }
     }
 }
