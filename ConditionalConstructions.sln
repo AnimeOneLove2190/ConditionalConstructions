@@ -35,7 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quest14", "Quest14\Quest14.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quest15", "Quest15\Quest15.csproj", "{7B5423FA-8FA0-4C7D-99D1-437E23AC0D05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quest16", "Quest16\Quest16.csproj", "{4937AD3A-EB0D-4554-B3F7-1202DF317612}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quest16", "Quest16\Quest16.csproj", "{4937AD3A-EB0D-4554-B3F7-1202DF317612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quest17", "Quest17\Quest17.csproj", "{D491441F-6D08-4764-B078-7FF4E6D4F034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quest18", "Quest18\Quest18.csproj", "{40304AE1-DBD7-4E67-8CC0-F0B6050FCBA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,14 @@ Global
 		{4937AD3A-EB0D-4554-B3F7-1202DF317612}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4937AD3A-EB0D-4554-B3F7-1202DF317612}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4937AD3A-EB0D-4554-B3F7-1202DF317612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D491441F-6D08-4764-B078-7FF4E6D4F034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D491441F-6D08-4764-B078-7FF4E6D4F034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D491441F-6D08-4764-B078-7FF4E6D4F034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D491441F-6D08-4764-B078-7FF4E6D4F034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40304AE1-DBD7-4E67-8CC0-F0B6050FCBA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40304AE1-DBD7-4E67-8CC0-F0B6050FCBA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40304AE1-DBD7-4E67-8CC0-F0B6050FCBA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40304AE1-DBD7-4E67-8CC0-F0B6050FCBA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
