@@ -6,6 +6,7 @@ namespace TemporaryXyita
     {
         static void Main(string[] args)
         {
+            // Здесь покоится древнее зло, сортиующее три числа по убыванию
             int numOne = int.Parse(Console.ReadLine());
             int numTwo = int.Parse(Console.ReadLine());
             int numThree = int.Parse(Console.ReadLine());

@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quest03", "Quest03\Quest03.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quest04", "Quest04\Quest04.csproj", "{9693CA9F-9274-4405-980C-44153D94B264}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemporaryXyita", "TemporaryXyita\TemporaryXyita.csproj", "{726AECBE-AA4C-4C02-9A05-649321DB4CEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Здесь покоится древнее зло", "TemporaryXyita\Здесь покоится древнее зло.csproj", "{726AECBE-AA4C-4C02-9A05-649321DB4CEA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quest05", "Quest05\Quest05.csproj", "{95D72C9C-5837-4471-928F-8CC2982439C7}"
 EndProject
