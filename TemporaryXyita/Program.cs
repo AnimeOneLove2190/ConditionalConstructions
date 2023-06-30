@@ -6,41 +6,92 @@ namespace TemporaryXyita
     {
         static void Main(string[] args)
         {
-            // проверка полов
-            string floor1 = Console.ReadLine();
-            bool floor2 = floor1 == "м";
-            Console.WriteLine(floor2);
-            Console.WriteLine("след");
-            Console.ReadLine();
-            // проверка формул
-            double mk1 = double.Parse(Console.ReadLine());
-            mk1 = (-mk1 + Math.Sqrt(mk1)) / (2 * mk1);
-            Console.WriteLine(mk1);
-            Console.WriteLine("след");
-            Console.ReadLine();
-            // конвертация (оно же привидение) стринги в инты
-            string mk2 = "23";
-            int mk3 = int.Parse(mk2);
-            Console.WriteLine(mk3);
-            Console.WriteLine("след");
-            Console.ReadLine();
-            // ебтвою названия файлов сука 5 квест блять
-            int numberOne = int.Parse(Console.ReadLine());
-            bool condOne = (numberOne >= 10);
-            bool condTwo = (numberOne < 100);
-            bool resultOne = (condOne && condTwo);
-            if (resultOne == true)
+            int numOne = int.Parse(Console.ReadLine());
+            int numTwo = int.Parse(Console.ReadLine());
+            int numThree = int.Parse(Console.ReadLine());
+            int sortNumOne = 0;
+            int sortNumTwo = 0;
+            int sortNumThree = 0;
+            bool minCondResOne = (numOne <= numTwo) & (numOne <= numThree);
+            bool minCondResTwo = (numTwo <= numOne) & (numTwo <= numThree);
+            bool minCondResThree = (numThree <= numOne) & (numThree <= numTwo);
+            if (minCondResOne)
             {
-                int interOne = numberOne / 10;
-                int interTwo = numberOne % 10;
-                string interThree = $"{interTwo}{interOne}";
-                int resultTwo = int.Parse(interThree);
-                Console.WriteLine(resultTwo);
+                sortNumOne = numOne;
             }
-            else
+            if (minCondResTwo)
             {
-                Console.WriteLine(0);
+                sortNumOne = numTwo;
             }
+            if (minCondResThree)
+            {
+                sortNumOne = numThree;
+            }
+            bool maxCondResOne = (numOne >= numTwo) & (numOne >= numThree);
+            bool maxCondResTwo = (numTwo >= numOne) & (numTwo >= numThree);
+            bool maxCondResThree = (numThree >= numOne) & (numThree >= numTwo);
+            if (maxCondResOne)
+            {
+                sortNumThree = numOne;
+            }
+            if (maxCondResTwo)
+            {
+                sortNumThree = numTwo;
+            }
+            if (maxCondResThree)
+            {
+                sortNumThree = numThree;
+            }
+            bool mdCondOne = (numOne < sortNumThree) & (numOne > sortNumOne);
+            bool mdCondTwo = (numTwo < sortNumThree) & (numTwo > sortNumOne);
+            bool mdCondThree = (numThree < sortNumThree) & (numThree > sortNumOne);
+            if (mdCondOne)
+            {
+                sortNumTwo = numOne;
+            }
+            if (mdCondTwo)
+            {
+                sortNumTwo = numTwo;
+            }
+            if (mdCondThree)
+            {
+                sortNumTwo = numThree;
+            }
+            if (sortNumTwo == 0)
+            {
+                bool condOne = (numOne == sortNumOne) & (numTwo == sortNumOne);
+                bool condTwo = (numOne == sortNumOne) & (numThree == sortNumOne);
+                bool condThree = (numTwo == sortNumOne) & (numThree == sortNumOne);
+                bool condFour = (numOne == sortNumThree) & (numTwo == sortNumThree);
+                bool condFive = (numOne == sortNumThree) & (numThree == sortNumThree);
+                bool condSix = (numTwo == sortNumThree) & (numThree == sortNumThree);
+                if (condOne)
+                {
+                    sortNumTwo = sortNumOne;
+                }
+                if (condTwo)
+                {
+                    sortNumTwo = sortNumOne;
+                }
+                if (condThree)
+                {
+                    sortNumTwo = sortNumOne;
+                }
+                if (condFour)
+                {
+                    sortNumTwo = sortNumThree;
+                }
+                if (condFive)
+                {
+                    sortNumTwo = sortNumThree;
+                }
+                if (condSix)
+                {
+                    sortNumTwo = sortNumThree;
+                }
+            }
+            string result = $"{sortNumOne} {sortNumTwo} {sortNumThree}";
+            Console.WriteLine(result);
         }
     }
 }

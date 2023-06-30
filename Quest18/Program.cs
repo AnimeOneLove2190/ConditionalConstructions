@@ -9,9 +9,9 @@ namespace Quest18
             int numOne = int.Parse(Console.ReadLine());
             int numTwo = int.Parse(Console.ReadLine());
             int numThree = int.Parse(Console.ReadLine());
-            int sortNumOne = numOne;
-            int sortNumTwo = numTwo;
-            int sortNumThree = numThree;
+            int sortNumOne = 0;
+            int sortNumTwo = 0;
+            int sortNumThree = 0;
             bool minCondResOne = (numOne <= numTwo) & (numOne <= numThree);
             bool minCondResTwo = (numTwo <= numOne) & (numTwo <= numThree);
             bool minCondResThree = (numThree <= numOne) & (numThree <= numTwo);
@@ -56,6 +56,39 @@ namespace Quest18
             if (mdCondThree)
             {
                 sortNumTwo = numThree;
+            }
+            if (sortNumTwo == 0)
+            {
+                bool condOne = (numOne == sortNumOne) & (numTwo == sortNumOne);
+                bool condTwo = (numOne == sortNumOne) & (numThree == sortNumOne);
+                bool condThree = (numTwo == sortNumOne) & (numThree == sortNumOne);
+                bool condFour = (numOne == sortNumThree) & (numTwo == sortNumThree);
+                bool condFive = (numOne == sortNumThree) & (numThree == sortNumThree);
+                bool condSix = (numTwo == sortNumThree) & (numThree == sortNumThree);
+                if (condOne)
+                {
+                    sortNumTwo = sortNumOne;
+                }
+                if (condTwo)
+                {
+                    sortNumTwo = sortNumOne;
+                }
+                if (condThree)
+                {
+                    sortNumTwo = sortNumOne;
+                }
+                if (condFour)
+                {
+                    sortNumTwo = sortNumThree;
+                }
+                if (condFive)
+                {
+                    sortNumTwo = sortNumThree;
+                }
+                if (condSix)
+                {
+                    sortNumTwo = sortNumThree;
+                }
             }
             string result = $"{sortNumOne} {sortNumTwo} {sortNumThree}";
             Console.WriteLine(result);
