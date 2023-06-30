@@ -11,9 +11,9 @@ namespace Quest18
             int numThree = int.Parse(Console.ReadLine());
             if (numOne > numTwo)
             {
-                int numInter = numTwo;
+                int numIn = numTwo;
                 numTwo = numOne;
-                numOne = numInter;
+                numOne = numIn;
             }
             if (numTwo > numThree)
             {
